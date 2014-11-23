@@ -1,0 +1,8 @@
+# run function in device
+# $0 <device name> <function name> <parameter>
+
+source $HOME/spark/spark
+ID=$1
+FUNC=$2
+VAL=$3
+eval curl ${SPARK_URL}devices/$ID/${FUNC} -d "params=${VAL}"
