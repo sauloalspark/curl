@@ -1,0 +1,16 @@
+# variables shared by all scripts
+
+set -xeu
+#wget http://curl.haxx.se/ca/cacert.pem -O ca-bundle.crt
+
+# PATH FOR SCRIPTS
+SPARK_PATH=$HOME/spark
+
+# SPARK TOLKEN
+SPARK_TOLKEN=XXX
+
+# CURL OPTIONS
+SPARK_CURL='--capath '$SPARK_PATH' --cacert '$SPARK_PATH'/ca-bundle.crt -H "Authorization: Bearer '$SPARK_TOLKEN'"'
+
+# API PATH
+SPARK_URL="$SPARK_CURL https://api.spark.io/v1/"
