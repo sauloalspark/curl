@@ -1,0 +1,5 @@
+# list all public events
+# $0
+
+source $HOME/spark/spark
+eval curl ${SPARK_URL}events
