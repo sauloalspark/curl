@@ -1,0 +1,7 @@
+# reads variable from device
+# $0 <device id> <variable name>
+
+source $HOME/spark/spark
+ID=$1
+VAR=$2
+eval curl ${SPARK_URL}devices/${ID}/${VAR}
