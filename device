@@ -1,0 +1,6 @@
+#list information on device
+#$0 <device name>
+
+source $HOME/spark/spark
+ID=$1
+eval curl ${SPARK_URL}devices/$ID
