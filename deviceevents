@@ -1,0 +1,6 @@
+# list events in device
+# $0 <device name>
+
+source $HOME/spark/spark
+DEV=$1
+eval curl ${SPARK_URL}devices/${DEV}/events
